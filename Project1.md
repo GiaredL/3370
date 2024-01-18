@@ -1,8 +1,8 @@
-Circular Buffer Implementation
+# Circular Buffer Implementation
 Overview:
 Implement a Circular Buffer class in C++ that handles dynamic memory allocation for character elements.
 
-Class Structure:
+## Class Structure:
 cpp
 Copy code
 #include <string>
@@ -34,13 +34,13 @@ public:
 };
 
 
-Implementation Details:
-Circular Buffer Structure:
+# Implementation Details:
+## Circular Buffer Structure:
 
-Utilize a dynamic (heap) array for storing characters.
-Maintain integer indexes (or pointers) for the head and tail of the data in use.
-Wrap around to the beginning when either index reaches the end of the buffer.
-Dynamic Array Growth:
+-Utilize a dynamic (heap) array for storing characters.
+-Maintain integer indexes (or pointers) for the head and tail of the data in use.
+-Wrap around to the beginning when either index reaches the end of the buffer.
+-Dynamic Array Growth:
 
 When adding more characters than the buffer has room for, dynamically grow the internal array.
 Allocate a new array that is one CHUNK larger than the previous one.
